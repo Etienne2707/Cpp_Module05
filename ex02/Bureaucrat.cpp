@@ -12,7 +12,7 @@ Bureaucrat::Bureaucrat(std::string name, int grade) : _name(name), _grade(grade)
     std::cout << yellow << "Parametric Bureaucrat Contructeur Call" << reset << std::endl;
     try
     {
-        if (this->_grade < 0)
+        if (this->_grade < 1)
             throw GradeTooHighException();
         else if (this->_grade > 150)
             throw GradeTooHighException();
