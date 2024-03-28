@@ -15,9 +15,10 @@ int main(void)
         ShrubberyCreationForm Sf("Target");
         RobotomyRequestForm RRf("TargetRRF");
 
-        /*std::cout << b << std::endl;
+        std::cout << Sf << std::endl;
+        std::cout << b << std::endl;
         Sf.beSigned(b);
-        b.executeForm(Sf);*/
+        b.executeForm(Sf);
         RRf.beSigned(b);
         b.executeForm(RRf);
 

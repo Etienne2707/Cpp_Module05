@@ -4,7 +4,7 @@ SRCS		=	main.cpp Bureaucrat.cpp AForm.cpp ShrubberyCreationForm.cpp RobotomyRequ
 OBJS		=	$(SRCS:.cpp=.o)
 
 CC = clang++
-CFLAGS = -std=c++03 -Wall -Wextra -Werror -gdwarf-4
+CFLAGS = -Wall -Wextra -Werror -gdwarf-4
  CFLAGS += -g3
 # CFLAGS += -fsanitize=address
 ifeq ($(DEBUG),true)

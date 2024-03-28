@@ -28,6 +28,8 @@ RobotomyRequestForm::RobotomyRequestForm( RobotomyRequestForm const & src ){
 RobotomyRequestForm & RobotomyRequestForm::operator=(RobotomyRequestForm const & rhs)
 {
     std::cout << "RobotomyRequestForm Assignment operator called" << std::endl;
+    if (this == &rhs)
+        return *this;
     this->_target = rhs.getTarget();
     this->_sgrade = rhs.getSGrade();
     this->_egrade = rhs.getEGrade();

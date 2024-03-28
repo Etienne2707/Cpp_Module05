@@ -28,6 +28,8 @@ PresidentialPardonForm::PresidentialPardonForm( PresidentialPardonForm const & s
 PresidentialPardonForm & PresidentialPardonForm::operator=(PresidentialPardonForm const & rhs)
 {
     std::cout << "PresidentialPardonForm Assignment operator called" << std::endl;
+    if (this == &rhs)
+        return *this;
     this->_target = rhs.getTarget();
     this->_sgrade = rhs.getSGrade();
     this->_egrade = rhs.getEGrade();

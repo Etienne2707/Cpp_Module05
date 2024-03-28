@@ -28,6 +28,8 @@ ShrubberyCreationForm::ShrubberyCreationForm( ShrubberyCreationForm const & src 
 ShrubberyCreationForm & ShrubberyCreationForm::operator=(ShrubberyCreationForm const & rhs)
 {
     std::cout << "ShrubberyCreationForm Assignment operator called" << std::endl;
+    if (this == &rhs)
+        return *this;
     this->_target = rhs.getTarget();
     this->_sgrade = rhs.getSGrade();
     this->_egrade = rhs.getEGrade();

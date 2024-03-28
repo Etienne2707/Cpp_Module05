@@ -20,7 +20,7 @@ Form::Form(std::string name,int sgrade,int egrade) : _name(name), _sgrade(sgrade
     catch(GradeTooHighException & e)
     {
         std::cout << e.what() << '\n';
-        std::cout << "Form Set To 1";
+        std::cout << "Form Set To 1\n";
         if (this->_egrade < 1)
             this->_egrade = 1;
         else if (this->_sgrade < 1)
@@ -29,7 +29,7 @@ Form::Form(std::string name,int sgrade,int egrade) : _name(name), _sgrade(sgrade
     catch(GradeTooLowException & e)
     {
         std::cout << e.what() << '\n';
-        std::cout << "Form Set To 150";
+        std::cout << "Form Set To 150\n";
         if (this->_egrade > 150)
             this->_egrade = 150;
         else if (this->_sgrade > 150)
